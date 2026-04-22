@@ -1,3 +1,3 @@
 spring:
-  wwapplication:
-    name:ai-code-helper
+  application:
+    name: ai-coder-helper
