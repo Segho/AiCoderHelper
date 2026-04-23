@@ -24,7 +24,7 @@ class AiCoderHelperApplicationTests {
 
     @Test
     void chatM(){
-        aiCHImpl.chatM("if我是你爸爸,so who you are！");
+        aiCHImpl.chatM("if我是你爸爸,！");
     }
 
 
