@@ -5,5 +5,5 @@ langchain4j:
   community:
     dashscope:
       chat-model:
-        api-key: sk-f0b9e7dbfb26474a9a6d57b0a1d41677
+        api-key: sk-355f86c0852149c4b49b4a42b6f561e1
         model-name: qwen-plus
