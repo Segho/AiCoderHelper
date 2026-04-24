@@ -1,5 +1,6 @@
-package com.example.aicoderhelper.ai;
+package com.example.aicoderhelper.old;
 
+import com.example.aicoderhelper.ai.AiCoderHelperService;
 import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.data.message.UserMessage;
 import dev.langchain4j.model.chat.ChatModel;

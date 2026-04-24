@@ -1,8 +1,8 @@
 package com.example.aicoderhelper;
 
 import com.example.aicoderhelper.ai.AiCoderHelper;
-import com.example.aicoderhelper.ai.AiCoderHelperServiceImpl;
-import dev.langchain4j.data.message.ImageContent;
+import com.example.aicoderhelper.ai.AiCoderHelperServiceFactory;
+import com.example.aicoderhelper.old.AiCoderHelperServiceImpl;
 import dev.langchain4j.data.message.TextContent;
 import dev.langchain4j.data.message.UserMessage;
 import jakarta.annotation.Resource;
@@ -22,21 +22,24 @@ class AiCoderHelperApplicationTests {
     @Resource
     private AiCoderHelperServiceImpl aiCHImpl;
 
+
     @Test
-    void chatM(){
+    void chatM() {
         aiCHImpl.chatM("if我是你爸爸,！");
     }
 
 
     @Test
-    void chat(){
+    void chat() {
         aiCoderHelper.chat("what's your name");
     }
+
+
     @Test
     void chatWithMessage() {
         UserMessage userMessage = UserMessage.from(
                 TextContent.from("i have a dream about become a fly man to save world")
-                   );
+        );
         aiCoderHelper.chatWithMessage(userMessage);
     }
 }
