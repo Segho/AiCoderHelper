@@ -6,7 +6,7 @@ import dev.langchain4j.service.spring.AiService;
 import jakarta.annotation.Resource;
 
 
-@AiService
+//@AiService
 public interface AiCoderHelperService {
 
 

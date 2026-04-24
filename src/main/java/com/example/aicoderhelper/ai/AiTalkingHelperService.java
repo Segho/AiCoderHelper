@@ -2,8 +2,8 @@ package com.example.aicoderhelper.ai;
 
 import dev.langchain4j.service.SystemMessage;
 
-public interface AiTalkingHelper {
+public interface AiTalkingHelperService {
 
-    @SystemMessage
+    @SystemMessage(fromResource = "system-prompt.txt")
     String talk(String msg);
 }

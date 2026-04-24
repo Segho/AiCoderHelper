@@ -2,17 +2,18 @@ package com.example.aicoderhelper.ai;
 
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.service.AiServices;
-import dev.langchain4j.service.spring.AiService;
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-public class AiTalkingHelperService {
+@Configuration
+public class AiTalkingHelperServiceFactory {
 
     @Resource
     private ChatModel qwenChatModel;
 
     @Bean
-    private AiTalkingHelper aiTalkingHelper() {
-        return AiServices.create(AiTalkingHelper.class, qwenChatModel);
+    public AiTalkingHelperService aiTalkingHelperService() {
+        return AiServices.create(AiTalkingHelperService.class, qwenChatModel);
     }
 }
