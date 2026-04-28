@@ -1,4 +1,4 @@
-package com.example.aicoderhelper.ai;
+package com.example.aicoderhelper.aitalk;
 
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.service.AiServices;

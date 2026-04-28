@@ -1,4 +1,4 @@
-package com.example.aicoderhelper.ai;
+package com.example.aicoderhelper.aitalk;
 
 import dev.langchain4j.service.SystemMessage;
 

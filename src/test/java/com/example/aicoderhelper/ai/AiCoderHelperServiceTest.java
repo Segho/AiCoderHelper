@@ -1,5 +1,6 @@
 package com.example.aicoderhelper.ai;
 
+import com.example.aicoderhelper.aitalk.AiTalkingHelperService;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +16,7 @@ class AiCoderHelperServiceTest {
     void testChat() {
         String rst = aiCoderHelperService.chatM("say my name! which TV SHOW is this line from");
         System.out.println("AI Response: \n" + rst);
-    }g
+    }
 
     @Resource
     private AiTalkingHelperService aiTalkingHelperService;
