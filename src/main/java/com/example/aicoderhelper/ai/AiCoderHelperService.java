@@ -10,6 +10,6 @@ import jakarta.annotation.Resource;
 public interface AiCoderHelperService {
 
 
-    @SystemMessage(fromResource = "system-prompt.txt")
+    @SystemMessage(fromResource = "system-prompt-eng.txt")
     String  chatM(String msg);
 }
